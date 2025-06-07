@@ -47,6 +47,10 @@ export function SeasonClock() {
   return (
     <section
       onClick={toggleDark}
+      style={{
+      backgroundColor: isDark ? '#222' : '#eee',
+        color: isDark ? '#eee' : '#222',
+      }}
     >
       <h2>Season: {seasonIcon}</h2>
       <h3>{monthName}</h3>

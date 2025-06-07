@@ -1,6 +1,7 @@
 import { AnimalList } from './cmps/animal-list.jsx'
 import { SeasonClock } from './cmps/season-clock.jsx'
 import { CountDown } from './cmps/countdown-component.jsx'
+import { WatcherApp } from './cmps/watchers-component.jsx'
 
 export function App() {
     const animalInfos = [
@@ -25,6 +26,7 @@ export function App() {
                         alert('Countdown finished!')
                     }}
                 />
+                <WatcherApp />
 
             </main>
         </section>
