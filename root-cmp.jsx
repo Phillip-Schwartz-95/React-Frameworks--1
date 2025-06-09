@@ -2,6 +2,7 @@ import { AnimalList } from './cmps/animal-list.jsx'
 import { SeasonClock } from './cmps/season-clock.jsx'
 import { CountDown } from './cmps/countdown-component.jsx'
 import { WatcherApp } from './cmps/watchers-component.jsx'
+import { MouseMonitor } from './cmps/mouse-monitor.jsx'
 
 export function App() {
     const animalInfos = [
@@ -27,6 +28,7 @@ export function App() {
                     }}
                 />
                 <WatcherApp />
+                <MouseMonitor />
 
             </main>
         </section>
