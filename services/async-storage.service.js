@@ -19,15 +19,14 @@ function get(entityType, entityId) {
     })
 }
 
-function post(entityType, newEntity) {
-    newEntity = {...newEntity}
-    newEntity.id = _makeId()
-    return query(entityType).then(entities => {
-        entities.push(newEntity)
-        _save(entityType, entities)
-        return newEntity
-    })
+function post(key, entity) {
+  entity.id = entity.id || _makeId()
+  const entities = JSON.parse(localStorage.getItem(key) || '[]')
+  entities.push(entity)
+  localStorage.setItem(key, JSON.stringify(entities))
+  return Promise.resolve(entity)
 }
+
 
 function put(entityType, updatedEntity) {
     return query(entityType).then(entities => {
