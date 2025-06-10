@@ -5,11 +5,6 @@ import { WatcherApp } from './cmps/watchers-component.jsx'
 import { MouseMonitor } from './cmps/mouse-monitor.jsx'
 
 export function App() {
-    const animalInfos = [
-        { type: 'Malayan Tiger', count: 787 },
-        { type: 'Mountain Gorilla', count: 212 },
-        { type: 'Fin Whale', count: 28 },
-    ]
 
     return (
         <section className="app">
@@ -18,7 +13,7 @@ export function App() {
 
             </header>
             <main className="container">
-                <AnimalList animalInfos={animalInfos} />
+                <AnimalList />
                 <SeasonClock />
                 <CountDown
                     startFrom={10}
