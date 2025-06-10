@@ -23,11 +23,17 @@ export function MouseMonitor() {
         setIsOn((prev) => !prev)
     }
 
-    return (
-        <section>
-            <p>X: {pos.x}</p>
-            <p>Y: {pos.y}</p>
-            <button onClick={toggleMonitor}>{isOn ? 'Pause' : 'Resume'}</button>
-        </section>
-    )
+  return (
+    <section className="mouse-monitor-section">
+      <h2 className="mouse-monitor-header">Mouse Tracker</h2>
+      <p className="mouse-monitor-pos">X: {pos.x}</p>
+      <p className="mouse-monitor-pos">Y: {pos.y}</p>
+      <button
+        className={`mouse-monitor-button ${isOn ? 'on' : 'off'}`}
+        onClick={toggleMonitor}
+      >
+        {isOn ? 'Pause' : 'Resume'}
+      </button>
+    </section>
+  )
 }

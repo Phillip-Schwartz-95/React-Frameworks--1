@@ -1,0 +1,51 @@
+.animal-list {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.animal-list caption {
+     font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.animal-list th,
+.animal-list td {
+    padding: 12px 15px;
+}
+
+.animal-list thead {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+}
+
+.animal-list tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.animal-list tbody tr:hover {
+    background-color: #f1f7ff;
+}
+
+.animal-list a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.animal-list a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}

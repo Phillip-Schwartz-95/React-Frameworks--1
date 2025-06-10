@@ -9,3 +9,6 @@
 
 /* Components */
 @import 'cmps/app-header.css';
+@import 'cmps/watchers.css';
+@import 'cmps/animal-list.css';
+@import 'cmps/mouse-monitor.css';

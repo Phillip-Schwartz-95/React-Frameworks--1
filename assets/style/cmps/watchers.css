@@ -1,0 +1,74 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  z-index: 1000;
+}
+
+/* Modal Content: white box, centered */
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Modal avatar image */
+.modal-content img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Watcher List */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1em;
+}
+
+/* Avatar in the list */
+li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Buttons styling */
+button {
+  margin-left: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background: #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* Align buttons horizontally in li */
+li button:not(:last-child) {
+  margin-right: 8px;
+}

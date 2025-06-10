@@ -1,5 +1,5 @@
 export function SeasonClock() {
-    const { useState, useEffect } = React
+  const { useState, useEffect } = React
 
   const [date, setDate] = useState(new Date())
   const [isDark, setIsDark] = useState(false)
@@ -26,10 +26,10 @@ export function SeasonClock() {
   const season = getSeason(date.getMonth())
 
   const seasonIcons = {
-    Winter: '❄️',  
-    Spring: '🌸',  
-    Summer: '☀️',   
-    Fall: '🍂',    
+    Winter: '❄️',
+    Spring: '🌸',
+    Summer: '☀️',
+    Fall: '🍂',
   }
 
   const seasonIcon = seasonIcons[season] || ''
@@ -48,8 +48,15 @@ export function SeasonClock() {
     <section
       onClick={toggleDark}
       style={{
-      backgroundColor: isDark ? '#222' : '#eee',
+        backgroundColor: isDark ? '#222' : '#eee',
         color: isDark ? '#eee' : '#222',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+        padding: '20px',
+        boxSizing: 'border-box',
       }}
     >
       <h2>Season: {seasonIcon}</h2>

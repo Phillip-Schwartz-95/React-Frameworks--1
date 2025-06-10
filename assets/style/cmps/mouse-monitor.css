@@ -1,0 +1,42 @@
+.mouse-monitor-section {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+    color: #222;
+}
+
+.mouse-monitor-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mouse-monitor-pos {
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+}
+
+.mouse-monitor-button {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.mouse-monitor-button.on {
+    background-color: #f44336;
+}
+
+.mouse-monitor-button.off {
+    background-color: #4caf50;
+}

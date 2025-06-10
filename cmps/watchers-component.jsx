@@ -55,7 +55,7 @@ export function WatcherApp() {
     }
 
     return (
-        <div>
+        <div style={{ backgroundColor: '#eee', margin: '20px', padding: '15px' }}>
             <h1>Watcher App</h1>
             <button onClick={addWatcher}>Add Watcher</button>
             <ul>
